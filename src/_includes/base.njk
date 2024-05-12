@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>{{ title }}</title>
+  </head>
+  <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
+
+
+
+    <div class="container">
+
+  <aside>
+      <div class="ascii">
+       ╱|、
+      (•˕ • 7
+      |、⁻〵ノ)
+      じしˍ,)ノ
+      Welcome
+      </div>
+  <ul>
+  <li><a href="/">/</a></li>
+  <li><a href="/blog">/blog</a></li>
+  <li><a href="/about">/about</a></li>
+  <!-- COMMENTED OUT FOR NOW
+  <li><a href="/now">/now</a></li>
+  <li><a href="/sitemap">/sitemap</a></li>
+  <li><a href="/guestbook">/guestbook</a></li>
+  -->
+  <ul>
+  </aside>
+  <main>{{ content | safe }}</main>
+  <footer>
+  Hosted on <a href="https://nekoweb.org">Nekoweb</a>. (ﾐዋ ﻌ ዋﾐ)ﾉ
+  <br>
+  ♡2024 Copying is an act of love. <a href="https://copyheart.org/manifesto/" target="_blank" rel="noreferrer noopener">Please copy.</a></footer>
+</div>
+  </body>
+</html>
+
+
+
