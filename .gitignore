@@ -1,1 +1,2 @@
 .eleventyignore
+.node_modules

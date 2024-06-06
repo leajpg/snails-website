@@ -19,7 +19,6 @@ jobs:
         uses: mp-pinheiro/nekoweb-deploy@main
         with:
           NEKOWEB_PAGENAME: "snails"
-          ENCRYPTION_KEY: ${{ secrets.NEKOWEB_ENCRYPTION_KEY }}
           API_KEY: ${{ secrets.NEKOWEB_API_KEY }}
           CLEANUP: true
           DEPLOY_DIR: public
