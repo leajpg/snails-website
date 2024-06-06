@@ -1,0 +1,25 @@
+name: Deploy to Nekoweb
+
+on:
+  push:
+    branches:
+      - main # Change to name of branch you're deploying from
+
+concurrency:
+  group: deploy-to-nekoweb
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to Nekoweb
+        uses: mp-pinheiro/nekoweb-deploy@main
+        with:
+          NEKOWEB_PAGENAME: "snails"
+          ENCRYPTION_KEY: ${{ secrets.NEKOWEB_ENCRYPTION_KEY }}
+          API_KEY: ${{ secrets.NEKOWEB_API_KEY }}
+          CLEANUP: true
+          DEPLOY_DIR: public
