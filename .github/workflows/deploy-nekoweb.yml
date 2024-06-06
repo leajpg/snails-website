@@ -18,7 +18,7 @@ jobs:
       - name: Deploy to Nekoweb
         uses: mp-pinheiro/nekoweb-deploy@main
         with:
-          NEKOWEB_PAGENAME: "snails"
+          NEKOWEB_PAGENAME: snails
           API_KEY: ${{ secrets.NEKOWEB_API_KEY }}
           CLEANUP: true
           DEPLOY_DIR: public
