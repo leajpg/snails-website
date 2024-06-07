@@ -1,0 +1,24 @@
+name: Create Zip of Public Folder
+
+on:
+  push:
+    branches:
+      - main # Change this to your default branch
+
+jobs:
+  create-zip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Create zip file of public folder
+        run: |
+          zip -r public.zip public
+
+      - name: Upload zip file
+        uses: actions/upload-artifact@v2
+        with:
+          name: public-zip
+          path: public.zip

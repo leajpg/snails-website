@@ -35,7 +35,7 @@ getStats();
 
 **Constantly under construction**
 
-<li><img src="https://snails.neocities.org/Images/buttons/snailsbutton.png"></li>
+<li><img src="https://files.catbox.moe/jnq0ed.png"></li>
                     <li>
                       <textarea style="width: 300px;"> <a href="http://snails.neocities.org"><img src="https://files.catbox.moe/jnq0ed.png"></a></textarea>
                     </li>
@@ -44,6 +44,10 @@ getStats();
 </div>
 
   <div class="currently">
+
+# Updates
+
+<p></p>
 
 # Currently
 
@@ -61,6 +65,7 @@ getStats();
 [ ] rss feed
 
 </details>
+
 <!--
 # Stats
 -->
