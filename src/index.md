@@ -39,7 +39,7 @@ getStats();
                     <li>
                       <textarea style="width: 300px;"> <a href="http://snails.neocities.org"><img src="https://files.catbox.moe/jnq0ed.png"></a></textarea>
                     </li>
-                    <li>hot linking is OK</li>
+                    <li>hot linking is OK!</li>
 
 </div>
 
