@@ -32,9 +32,33 @@
   -->
   <ul>
   </aside>
-  <main><div class="home">
+  <main><script>
+  // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
+                        
+let username = "snails"; // UNLESS YOU HAVE A CUSTOM DOMAIN, Put your Nekoweb username here as a string
+
+if (username === undefined && window.location.href.includes(".nekoweb.org")) {
+  // if we know the site has a subdomain, we can use that as the username instead
+  username = window.location.host.split(".")[0];
+}
+
+const getStats = async () => {
+    const request = await fetch(`https://nekoweb.org/api/site/info/${username}`);
+    const json = await request.json();
+
+    const updated = new Date(json.updated_at).toLocaleDateString(); // Formats Last Updated text
+    const created = new Date(json.created_at).toLocaleDateString(); // Formats Creation Date text
+
+    document.getElementById("created").innerHTML = `<em>Created</em>: ${created}`;
+    document.getElementById("updated").innerHTML = `<em>Updated</em>: ${updated}`;
+    document.getElementById("visitors").innerHTML = `<em>Visits</em>: ${json.views}`;
+    document.getElementById("followers").innerHTML = `<em>Followers</em>: ${json.followers}`;
+};
+getStats();
+</script>
+<div class="home">
   <div class="content">
-<h1>Hello World.</h1>
+<h1>Hello World</h1>
 <p><strong>Constantly under construction</strong></p>
 <li><img src="https://snails.neocities.org/Images/buttons/snailsbutton.png"></li>
                     <li>
@@ -44,24 +68,22 @@
 </div>
   <div class="currently">
 <h1>Currently</h1>
-<ul>
-<li>Listening to:</li>
-<li>Watching: Dimension 20 - Crown of Candy</li>
-<li>Playing: Alice's Madness Returns</li>
-</ul>
-<h1>Find Me</h1>
-<ul>
-<li>Email</li>
-</ul>
+<p>Listening to:</p>
+<p>Watching: Dimension 20 - Crown of Candy</p>
+<p>Playing: Alice's Madness Returns</p>
 <details>
-<summary><strong> To-Do List</strong></summary>
-<ul>
-<li>[ ] about page</li>
-<li>[ ] sitemap</li>
-<li>[ ] guestbook</li>
-<li>[ ] rss feed</li>
-</ul>
+<summary>To Do List</summary>
+<p>[ ] fix mirrors
+[ ] about page
+[ ] sitemap
+[ ] guestbook
+[ ] rss feed</p>
 </details>
+<h1>Stats</h1>
+<p id="created"></p>
+<p id="updated"></p>
+<p id="visitors"></p>
+<p id="followers"></p>
 </div>
 </div>
 </main>
