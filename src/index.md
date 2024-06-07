@@ -37,7 +37,7 @@ getStats();
 
 <li><img src="https://snails.neocities.org/Images/buttons/snailsbutton.png"></li>
                     <li>
-                      <textarea style="max-width: 200px;"> <a href="http://snails.neocities.org"><img src="https://files.catbox.moe/jnq0ed.png"></a></textarea>
+                      <textarea style="width: 300px;"> <a href="http://snails.neocities.org"><img src="https://files.catbox.moe/jnq0ed.png"></a></textarea>
                     </li>
                     <li>hot linking is OK</li>
 
@@ -61,13 +61,16 @@ getStats();
 [ ] rss feed
 
 </details>
-
+<!--
 # Stats
-
+-->
+<!--
 <p id="created"></p>
 <p id="updated"></p>
 <p id="visitors"></p>
 <p id="followers"></p>
+
+--->
 
 </div>
 </div>
