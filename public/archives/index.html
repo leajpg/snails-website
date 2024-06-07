@@ -1,165 +1,47 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-    <script src="/public/assets/jquery.style-my-tooltips.js"></script>
-
-    <title>Snails</title>
-    <link href="https://unpkg.com/98.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/98.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/style-my-tooltips.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="./assets/counter.js"></script>
-    <script>
-      $(document).ready(function(){
-  
-     $("#updates").load("./updates.html");
-  
-  });
-     </script>
-    <script>
-      (function($){
-          $(document).ready(function(){
-              $("[title]").style_my_tooltips();
-          });
-      })(jQuery);
-  </script>
-    <script>
-    $(document).ready(function(){
-
-   $("#updates").load("./updates");
-
-});
-   </script>
-   <script type="text/javascript">
-    var mode = 0;
-    function grayscale() {
-      var photo = document.querySelector(".room");
-      if (mode === 0) {
-        photo.style.filter = "grayscale(100%)";
-        mode = 1;
-      } else {
-        photo.style.filter = "none";
-        mode = 0;
-      }
-    }</script>
-
-  <style>
-    main {
-    display: grid;
-    max-width: 1000px;
-    height: auto;
-    grid-template-areas:
-            "header"
-            "container"
-            "footer";
-    margin:auto;
-    text-align: center;
-}
-
-    footer{
-      grid-area: footer;
-      margin-top:10px;
-      text-align: center;
-      font-size: 14px;
-      font-family:'Lucida Console';
-}
-    
-
-    header{
-      grid-area: header;
-      text-align: center;
-      margin-bottom: 20px;
-      font-family: 'HeaderFont', 'Lucida Console';
-      font-size: 30px;
-      font-weight: bold;
-
-    }
-
-    .updates-box{
-    margin: auto;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 110px;
-    text-align: left;
-    }
-
-    .splash_spacer{
-    width: auto;
-    height: 100px;
-    }
-
-      
-    @media screen and (max-width: 1024px) {
-        .nav, .nav, .room .bookshelf .cat .monitors .poster {
-            display: none;
-        }
-        
-
-        #container{
-          width: 500px;
-          height: 500px;
-        }
-    }
-
-    @media screen and (max-width: 700px) {
-      .nav, .nav, .bookshelf .cat .monitors .poster {
-            display: none;
-        }
-
-        #container{
-          width: 400px;
-          height: 400px;
-          
-        }
-
-    }
-
-
-    
-
-</style>
-</head>
-<body>
-
-<main>
-
-
-<header>
-    <div class="splash_spacer"></div>
-<a href="/main.html">ENTER</a>
-</header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>archives</title>
+  </head>
+  <body >
 
 
 
-  </div>
+    <div class="container">
 
-
-
-        <div class="window" style="max-width: 999px; height: 150px">
-            <div class="title-bar">
-              <div class="title-bar-text">Updates</div>
-              <div class="title-bar-controls">
-                <button aria-label="Close"></button>
-              </div>
-            </div>
-            <div class="window-body">
-                <div class="updates-box" id="updates"></div>
-            </div>
-          </div>
-
-     <footer>
-      <div id="counter">
-        Last Updated: <span id="lastupdate"></span> | 
-        Visitors: <span id="hitcount"></span> | ♡2024 Copying is an act of love. <a href="https://copyheart.org/manifesto/" target="_blank" rel="noreferrer noopener">Please copy.</a> <br><br>
-        
-  </div>   
-     </footer>
+  <aside>
+      <div class="ascii">
+       ╱|、
+      (•˕ • 7
+      |、⁻〵ノ)
+      じしˍ,)ノ
+      Welcome
+      </div>
+  <ul>
+  <li><a href="/">/</a></li>
+  <li><a href="/about">/about</a></li>
+  <!-- COMMENTED OUT FOR NOW
+  <li><a href="/blog">/blog</a></li>
+  <li><a href="/about">/about</a></li>
+  <li><a href="/now">/now</a></li>
+  <li><a href="/sitemap">/sitemap</a></li>
+  <li><a href="/guestbook">/guestbook</a></li>
+  -->
+  </ul>
+  </aside>
+  <main><p><a href="../public/archives/index.html">archive1</a></p>
+<p><a href="../public/archives/main.html">archive2</a></p>
 </main>
-  </div>
-</body>
+  <footer>
+  Hosted on <a href="https://nekoweb.org">Nekoweb</a> + <a href="https://neocities.org/">Neocities</a>. (ﾐዋ ﻌ ዋﾐ)ﾉ
+  <br>
+  ♡2024 Copying is an act of love. <a href="https://copyheart.org/manifesto/" target="_blank" rel="noreferrer noopener">Please copy.</a></footer>
+</div>
+  </body>
 </html>
+
+
+

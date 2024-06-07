@@ -68,9 +68,7 @@ getStats();
 <p id="created"></p>
 <p id="updated"></p>
 <p id="visitors"></p>
-<p id="followers"></p>
-
---->
+<p id="followers"></p> -->
 
 </div>
 </div>
