@@ -33,13 +33,13 @@ getStats();
   
   # Hello World
 
-**Constantly under construction**
+**Welcome to my webbed site. Not a lot going on at the moment but feel free to explore my [about](/about) page or sign my [guestbook](/guestbook).**
 
 <li><img src="https://files.catbox.moe/jnq0ed.png"></li>
                     <li>
-                      <textarea style="width: 300px;"> <a href="http://snails.neocities.org"><img src="https://files.catbox.moe/jnq0ed.png"></a></textarea>
+                      <textarea style="width: 300px;"> <a href="http://snails.nekoweb.org"><img src="https://files.catbox.moe/jnq0ed.png"></a></textarea>
                     </li>
-                    <li>hot linking is OK!</li>
+                    <li>Hot linking is OK!</li>
 
 </div>
 
@@ -58,8 +58,8 @@ getStats();
 <details>
 <summary>To Do List</summary>
 
-[ ] fix mirrors
-[ ] about page
+[ x ] fix mirrors
+[ x ] about page
 [ ] sitemap
 [ ] guestbook
 [ ] rss feed

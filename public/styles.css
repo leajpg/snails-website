@@ -1,7 +1,10 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/sun.css');
+
 body{
     font-family: monospace;
     background-color: rgb(68, 60, 73);
     color:#fff;
+    font-size: 16px;
 }
 
 a{
@@ -14,7 +17,11 @@ a:hover{
 
 li{
     list-style-type: none;
-    line-height: 1.5em;
+    line-height: 1em;
+}
+
+ul{
+    line-height: 1em;  
 }
 
 .container { 
@@ -35,7 +42,8 @@ li{
   
   aside { grid-area: aside; }
   
-  main { grid-area: main; }
+  main { grid-area: main; 
+        margin-top: 30px ;}
   
   footer {
     grid-area: footer;
@@ -62,4 +70,46 @@ li{
     white-space: pre;
 }
 
+.about { 
+    display: grid;
+    grid-template-columns: 160px 1.7fr;
+    grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "pic info";
+      max-width:800px;
+      padding:5px;
+      border-radius:30px;
+      border: dotted white 2px;
+  }
+
+  .about li{
+    line-height: .5em;
+    list-style: square;
+  }
+  
+  .pic { grid-area: pic;
+    width: 200px;
+    }
+
+    .pic img{
+    width:200px;
+    border: dotted white 2px;
+    border-radius:50%;
+    margin:-30px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    }
+
+    .pic img:hover{
+        transform: rotate(10deg);
+    }
+  
+  .info { grid-area: info;}
+  
   
